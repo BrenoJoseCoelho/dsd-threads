@@ -11,7 +11,7 @@ package utils;
 public class ImageUtils {
     
     public static String getImagePath() {
-        return "./src/main/java/resources/assets/";
+        return "./src/main/java/imagens/";
     }
 	
     public static String createImagePath(String image) {

@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.dsd.threads;
+import view.InitialView;
 
 /**
  *
@@ -11,7 +12,7 @@ package com.mycompany.dsd.threads;
 public class DsdThreads {
 
     public static void main(String[] args) {
-     //   InitialView view = new InitialView();
-     //   view.setVisible(true);
+        InitialView view = new InitialView();
+        view.setVisible(true);
     }
 }
