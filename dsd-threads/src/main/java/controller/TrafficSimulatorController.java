@@ -26,6 +26,7 @@ public class TrafficSimulatorController implements AbstractTrafficSimulatorTable
 	public PieceModel[][] pieces;
 	private List<Car> cars;
 	private int numThreads = 0;
+        private boolean stopAndWait = false;
 
 	public TrafficSimulatorController() {
 		super();
@@ -79,6 +80,12 @@ public class TrafficSimulatorController implements AbstractTrafficSimulatorTable
 		generator.start();
     }
     
+    public void onInsercaoCarros(){
+        interruptClick = true;
+       
+        cars.clear();
+    }
+     
     public void onEncerrarCarros(){
         interruptClick = true;
         for (Car carro: cars) {
